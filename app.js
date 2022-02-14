@@ -10,13 +10,13 @@
 //   }
   
   
-  const pyramid = (n)=>{
-    let b = n - 1
+const pyramid = (n)=>{
+    let blank = n - 1
     for(let i=1; i <= n; i++){
-      let s = "*"
-      console.log(" ".repeat(b) + s.repeat(i*2-1));
-      b--;
+        let star = "*"
+        console.log(" ".repeat(blank) + star.repeat(i*2-1));
+        blank--;
     }
-  }
+}
 
-pyramid(5)
+pyramid(10)
