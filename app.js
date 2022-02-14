@@ -1,5 +1,8 @@
 
-// Basic Program
+// Pyramid
+
+
+//   V.1
 
 // function pyramid(n) {
 //     for(let i=1; i<= n; i++){
@@ -10,6 +13,9 @@
 //   }
   
   
+//   V.2
+
+
 const pyramid = (n)=>{
     let blank = n - 1
     for(let i=1; i <= n; i++){
