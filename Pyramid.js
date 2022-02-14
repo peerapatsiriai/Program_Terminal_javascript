@@ -25,4 +25,22 @@ const pyramid = (n)=>{
     }
 }
 
-pyramid(10)
+const pyramid_Reverse = (n)=>{
+
+    const star = "*"
+    // Pyramid
+    let blank = n - 1
+    for(let i=1; i <= n; i++){
+        console.log(" ".repeat(blank) + star.repeat( i * 2 - 1 ));
+        blank--;
+    }
+    // reverse
+    let blank1 = 0 
+    for(let i = n; i > 0; i--){
+        console.log(" ".repeat(blank1) + star.repeat( i * 2 - 1 ));
+        blank1++
+    }
+}
+
+
+pyramid_Reverse(5)
