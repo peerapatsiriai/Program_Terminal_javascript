@@ -3,7 +3,7 @@
 // number
 const arr = [ 7, 5, 3, 6, 1, 8, 2, 4, 16, 11, 20 ,19 , 2]
 const n = arr.length
-// range of arr = 8
+
 
 const bubbleSort = ()=> {
     console.log("Befor:  " + arr);
