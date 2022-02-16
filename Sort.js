@@ -2,10 +2,6 @@
 // number
 const arr = [ 7, 5, 3, 6, 1, 8, 2, 4, 16, 11, 20 ,19 , 2]
 const n = arr.length
-<<<<<<< HEAD
-=======
-
->>>>>>> 93b466897749b2a8cc806aad4e27c67ac8bb7b05
 
 
 const bubbleSort = (arr)=> {
@@ -25,12 +21,22 @@ const bubbleSort = (arr)=> {
     console.log("Sorted: " + arr);
 }
 
-const insertionSort = ()=> {
-    for(let i = 0; i < n; i++){
-        
+const insertionSort = (arr)=> {
+    console.log("Befor:  " + arr);
+    for(let i = 0; i <= n; i++) {
+        let temp = arr[i]
+        let j = i - 1
+        while((j > -1) && temp < arr[j]){
+            arr[j + 1] = arr[j]
+            j--
+        }
+        arr[j+1] = temp
     }
+    console.log("Sorted: " + arr);
 }
 
 
+insertionSort(arr)
 
-insertionSort()
+
+
