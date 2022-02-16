@@ -1,11 +1,10 @@
 
-
 // number
 const arr = [ 7, 5, 3, 6, 1, 8, 2, 4, 16, 11, 20 ,19 , 2]
 const n = arr.length
-// range of arr = 8
 
-const bubbleSort = ()=> {
+
+const bubbleSort = (arr)=> {
     console.log("Befor:  " + arr);
     for(let i = 0; i < n; i++){
         let p = i + 1
@@ -22,7 +21,12 @@ const bubbleSort = ()=> {
     console.log("Sorted: " + arr);
 }
 
-bubbleSort()
+const insertionSort = ()=> {
+    for(let i = 0; i < n; i++){
+        
+    }
+}
 
 
 
+insertionSort()
